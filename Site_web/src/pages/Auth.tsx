@@ -1,9 +1,9 @@
-import { Creation_compte } from "../components/Creation_compte"
+import { CreationCompte } from "../components/CreationCompte"
 
 export const Auth = () => {
     return(
         <div className="ml-20">
-            <Creation_compte />
+            <CreationCompte />
         </div>
     )
 }

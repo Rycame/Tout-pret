@@ -1,4 +1,4 @@
-export const Creation_compte = () => {
+export const CreationCompte = () => {
     return(
         <section className="mb-4">
             <h1>Création de compte</h1>
