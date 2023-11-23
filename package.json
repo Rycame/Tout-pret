@@ -1,0 +1,33 @@
+{
+  "name": "tout-pret",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "service1": "node backend/service-creation_compte/serveur.js",
+    "service2": "node backend/service-emprunt/serveur.js",
+    "front": "node frontend/app.js",
+    "start": "concurrently \"npm run service1\" \"npm run service2\" \"npm run front\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rycame/Tout-pret.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rycame/Tout-pret/issues"
+  },
+  "homepage": "https://github.com/Rycame/Tout-pret#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
