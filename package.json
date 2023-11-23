@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "service1": "node backend/service-creation_compte/serveur.js",
-    "service2": "node backend/service-emprunt/serveur.js",
+    "service1": "node backend/service-creation_compte/service-creation_compte.js",
+    "service2": "node backend/service-emprunt/service-emprunt.js",
     "front": "node frontend/app.js",
     "start": "concurrently \"npm run service1\" \"npm run service2\" \"npm run front\""
   },
